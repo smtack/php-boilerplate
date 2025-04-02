@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="<?php echo BASE_URL; ?>/public/css/style.css" rel="stylesheet">
-  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+  <title>PHP Boilerplate</title>
 </head>
 <body>

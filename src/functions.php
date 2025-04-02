@@ -1,5 +1,5 @@
 <?php
-// Sanitize input/output
+// Sanitize database output
 
 function escape($string) {
   return htmlentities($string, ENT_QUOTES, 'UTF-8');
@@ -14,6 +14,8 @@ function redirect($location) {
         header('HTTP/1.0 404 Not Found');
 
         exit();
+      default:
+        throw new InvalidArgumentException("Unsupported status code: $location");
       break;
     }
   } else {
